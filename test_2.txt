@@ -1,0 +1,42 @@
+
+mkdir /Users/pavelbabayan/projects/project_2 
+cd /Users/pavelbabayan/projects/project_2
+
+python3 -m pip install --user virtualenv
+python3 -m virtualenv  /Users/pavelbabayan/projects/project_2/venv_1
+source /Users/pavelbabayan/projects/project_2/venv_2/bin/activate
+
+The script virtualenv is installed in /Users/pavelbabayan/Library/Python/3.12/bin
+
+touch test.txt
+touch README.md
+touch requirements.txtgit push -u origin main
+touch test_2.py
+mkdir src
+cd /Users/pavelbabayan/projects/project_2/src_2
+touch __init__.py
+
+git init
+git status
+git add .
+git commit -m “enter a comment”
+git remote add origin git@github.com:PavelxBabayan/Repository_2.git
+git branch -M main
+git push -u origin main
+
+
+How to make ssh keys for githubHh
+ssh-keygen -t ed25519 -C pavelxbg@gmail.com
+Created directory '/Users/pavelbabayan/.ssh'
+Enter passphrase (empty for no passphrase):Pavel1965#
+eval "$(ssh-agent -s)"
+Agent pid 888
+touch ~/.ssh/config
+open ~/.ssh/config
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+pbcopy < ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIByU0Vsq4glecAsT3av3+WCqfbgqNRdj+0hfgNB8O/FM pavelxbg@gmail.com
+ssh -T git@github.com
+
+https://htmlacademy.ru/blog/git/git-console    reference
+s -al ~/.ssh
